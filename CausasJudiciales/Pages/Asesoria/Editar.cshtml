@@ -1,0 +1,89 @@
+﻿@page
+@model CausasJudiciales.Pages.Asesoria.EditarModel
+
+<br />
+<h2 class="text-info">EDITAR CAUSA</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <input type="hidden" asp-for="Asesor.Id" />
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Asesor.NumeroExpediente"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Asesor.NumeroExpediente" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Asesor.Representado"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Asesor.Representado" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Asesor.Caratula"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Asesor.Caratula" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Asesor.AceptaCargo"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Asesor.AceptaCargo" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Asesor.Actuacion"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Asesor.Actuacion" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Asesor.Regulacion"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Asesor.Regulacion" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Asesor.Observaciones"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Asesor.Observaciones" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="ACTUALIZAR" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="Index" class="btn btn-success form-control">VOLVER A LISTA DE CAUSAS</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
