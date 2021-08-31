@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace CausasJudiciales.Models
 {
     public class Asesor
@@ -21,7 +22,7 @@ namespace CausasJudiciales.Models
         
         [DataType(DataType.Date)]
         [Display(Name = "Fecha de aceptacion de Cargo")]
-        public DateTime? AceptaCargo { get; set; }
+        public DateTime AceptaCargo { get; set; }
         
         [Display(Name = "Actuacion")]
         public string Actuacion { get; set; }

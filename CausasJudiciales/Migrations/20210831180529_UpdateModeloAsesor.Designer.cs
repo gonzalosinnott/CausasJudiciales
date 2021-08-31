@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CausasJudiciales.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210831145308_CreacionModeloAsesor")]
-    partial class CreacionModeloAsesor
+    [Migration("20210831180529_UpdateModeloAsesor")]
+    partial class UpdateModeloAsesor
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,7 +28,7 @@ namespace CausasJudiciales.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime?>("AceptaCargo")
+                    b.Property<DateTime>("AceptaCargo")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Actuacion")
