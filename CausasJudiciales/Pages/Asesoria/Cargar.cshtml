@@ -1,0 +1,74 @@
+﻿@page
+@model CausasJudiciales.Pages.Asesoria.CargarModel
+@{
+
+    ViewData["Title"] = "CARGAR CAUSA";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="text-info">CARGAR CAUSA</div>
+
+            <form method="post">
+
+                <div class="mb-3">
+                    <label asp-for="Asesor.NumeroExpediente" class="form-label"></label>
+                    <input asp-for="Asesor.NumeroExpediente" class="form-control" placeholder="Ingrese Numero de Expediente" />
+                    <span asp-validation-for="Asesor.NumeroExpediente" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Asesor.Representado" class="form-label"></label>
+                    <input asp-for="Asesor.Representado" class="form-control" placeholder="Ingrese Apellido y Nombre del Representado" />
+                    <span asp-validation-for="Asesor.Representado" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Asesor.Caratula" class="form-label"></label>
+                    <input asp-for="Asesor.Caratula" class="form-control" placeholder="Ingrese Caratula de la Causa" />
+                    <span asp-validation-for="Asesor.Caratula" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Asesor.AceptaCargo" class="form-label"></label>
+                    <input asp-for="Asesor.AceptaCargo" class="form-control" />
+                    <span asp-validation-for="Asesor.Caratula" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Asesor.Actuacion" class="form-label"></label>
+                    <input asp-for="Asesor.Actuacion" class="form-control" placeholder="Ingrese Actuacion mas reciente" />
+                    <span asp-validation-for="Asesor.Actuacion" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Asesor.Regulacion" class="form-label"></label>
+                    <input asp-for="Asesor.Regulacion" class="form-control" placeholder="Ingrese regulacion" />
+                    <span asp-validation-for="Asesor.Regulacion" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Asesor.Observaciones" class="form-label"></label>
+                    <input asp-for="Asesor.Observaciones" class="form-control" placeholder="Ingrese observaciones" />
+                    <span asp-validation-for="Asesor.Observaciones" class="text-danger"></span>
+                </div>
+
+
+
+
+                <button type="submit" class="btn btn-primary">CARGAR CAUSA</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <a asp-page="Index" class="btn btn-success">VOLVER</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
