@@ -12,16 +12,16 @@ function loadDataTable() {
             "datatype": "json"
         },
         "columns": [
-            { "data": "numeroExpediente", "width": "20%" },
-            { "data": "representado", "width": "20%" },
-            { "data": "caratula", "width": "20%" },
-            { "data": "testigos", "width": "20%" },
-            { "data": "inicioDemanda", "width": "20%" },
-            { "data": "traslado", "width": "20%" },
-            { "data": "seDicteSentencia", "width": "20%" },
-            { "data": "sentencia", "width": "20%" },
-            { "data": "regulacion", "width": "20%" },
-            { "data": "observaciones", "width": "20%" },
+            { "data": "numeroExpediente", "width": "15%" },
+            { "data": "representado", "width": "15%" },
+            { "data": "caratula", "width": "15%" },
+            { "data": "testigos", "width": "15%" },
+            { "data": "inicioDemanda", "width": "15%" },
+            { "data": "traslado", "width": "15%" },
+            { "data": "seDicteSentencia", "width": "15%" },
+            { "data": "sentencia", "width": "15%" },
+            { "data": "regulacion", "width": "15%" },
+            { "data": "observaciones", "width": "15%" },
 
             {
                 "data": "id",
@@ -36,7 +36,7 @@ function loadDataTable() {
                             BORRAR
                         </a>
                         </div>`;
-                }, "width": "40%"
+                }, "width": "20%"
             }
         ],
         "language": {

@@ -11,11 +11,11 @@ namespace CausasJudiciales.Controlador
 {
     [Route("api/Beneficio")]
     [ApiController]
-    public class AsBeneficioControlador : Controller
+    public class BeneficioControlador : Controller
     {
         private readonly ApplicationDbContext _db;
 
-        public AsBeneficioControlador(ApplicationDbContext db)
+        public BeneficioControlador(ApplicationDbContext db)
         {
             _db = db;
         }
@@ -23,19 +23,19 @@ namespace CausasJudiciales.Controlador
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Json(new { data = await _db.Asesor.ToListAsync() });
+            return Json(new { data = await _db.Beneficio.ToListAsync() });
         }
 
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            var asesorFromDb = await _db.Asesor.FirstOrDefaultAsync(u => u.Id == id);
+            var beneficioFromDb = await _db.Beneficio.FirstOrDefaultAsync(u => u.Id == id);
 
-            if (asesorFromDb == null)
+            if (beneficioFromDb == null)
             {
                 return Json(new { succes = false, message = "Error al eliminar" });
             }
-            _db.Asesor.Remove(asesorFromDb);
+            _db.Beneficio.Remove(beneficioFromDb);
             await _db.SaveChangesAsync();
             return Json(new { success = true, message = "Registro borrado con exito" });
         }

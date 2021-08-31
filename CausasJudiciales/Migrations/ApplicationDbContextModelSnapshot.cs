@@ -26,7 +26,7 @@ namespace CausasJudiciales.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("AceptaCargo")
+                    b.Property<DateTime?>("AceptaCargo")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Actuacion")
@@ -80,7 +80,7 @@ namespace CausasJudiciales.Migrations
                     b.Property<string>("SeDicteSentencia")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Sentencia")
+                    b.Property<DateTime?>("Sentencia")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Testigos")

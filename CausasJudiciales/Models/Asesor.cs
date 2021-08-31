@@ -14,7 +14,7 @@ namespace CausasJudiciales.Models
         
         public int NumeroExpediente { get; set; }
        
-        [Display(Name = "Representado/S")]
+        [Display(Name = "Representado")]
         public string Representado { get; set; }
         
         [Display(Name = "Caratula de la Causa")]
@@ -22,7 +22,7 @@ namespace CausasJudiciales.Models
         
         [DataType(DataType.Date)]
         [Display(Name = "Fecha de aceptacion de Cargo")]
-        public DateTime AceptaCargo { get; set; }
+        public DateTime? AceptaCargo { get; set; }
         
         [Display(Name = "Actuacion")]
         public string Actuacion { get; set; }

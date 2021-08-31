@@ -18,21 +18,21 @@ namespace CausasJudiciales.Pages.Beneficios
             _db = db;
         }
 
-        public IEnumerable<Asesor> Asesor { get; set; }
+        public IEnumerable<Beneficio> Beneficio { get; set; }
 
         public async Task OnGet()
         {
-            Asesor = await _db.Asesor.ToListAsync();
+            Beneficio = await _db.Beneficio.ToListAsync();
         }
 
         public async Task<IActionResult> OnPostDelete(int id)
         {
-            var book = await _db.Asesor.FindAsync(id);
-            if (book == null)
+            var beneficio = await _db.Beneficio.FindAsync(id);
+            if (beneficio == null)
             {
                 return NotFound();
             }
-            _db.Asesor.Remove(book);
+            _db.Beneficio.Remove(beneficio);
             await _db.SaveChangesAsync();
 
             return RedirectToPage("Index");
