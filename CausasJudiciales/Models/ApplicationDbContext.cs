@@ -11,5 +11,7 @@ namespace CausasJudiciales.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         
         public DbSet<Asesor> Asesor { get; set; }
+
+        public DbSet<Beneficio> Beneficio { get; set; }
     }
 }

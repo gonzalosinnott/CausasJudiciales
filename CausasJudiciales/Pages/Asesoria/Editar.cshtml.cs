@@ -29,14 +29,14 @@ namespace CausasJudiciales.Pages.Asesoria
         {
             if (ModelState.IsValid)
             {
-                var BookFromDb = await _db.Asesor.FindAsync(Asesor.Id);
-                BookFromDb.NumeroExpediente = Asesor.NumeroExpediente;
-                BookFromDb.Representado = Asesor.Representado;
-                BookFromDb.Caratula = Asesor.Caratula;
-                BookFromDb.AceptaCargo = Asesor.AceptaCargo;
-                BookFromDb.Actuacion = Asesor.Actuacion;
-                BookFromDb.Regulacion = Asesor.Regulacion;
-                BookFromDb.Observaciones = Asesor.Observaciones;
+                var AsesorFromDb = await _db.Asesor.FindAsync(Asesor.Id);
+                AsesorFromDb.NumeroExpediente = Asesor.NumeroExpediente;
+                AsesorFromDb.Representado = Asesor.Representado;
+                AsesorFromDb.Caratula = Asesor.Caratula;
+                AsesorFromDb.AceptaCargo = Asesor.AceptaCargo;
+                AsesorFromDb.Actuacion = Asesor.Actuacion;
+                AsesorFromDb.Regulacion = Asesor.Regulacion;
+                AsesorFromDb.Observaciones = Asesor.Observaciones;
 
                 await _db.SaveChangesAsync();
 

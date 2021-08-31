@@ -51,6 +51,48 @@ namespace CausasJudiciales.Migrations
 
                     b.ToTable("Asesor");
                 });
+
+            modelBuilder.Entity("CausasJudiciales.Models.Beneficio", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Caratula")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InicioDemanda")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumeroExpediente")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Observaciones")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Regulacion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Representado")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SeDicteSentencia")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Sentencia")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Testigos")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Traslado")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Beneficio");
+                });
 #pragma warning restore 612, 618
         }
     }

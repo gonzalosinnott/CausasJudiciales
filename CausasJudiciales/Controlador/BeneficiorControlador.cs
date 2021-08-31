@@ -9,13 +9,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CausasJudiciales.Controlador
 {
-    [Route("api/Asesor")]
+    [Route("api/Beneficio")]
     [ApiController]
-    public class AsesorControlador : Controller
+    public class AsBeneficioControlador : Controller
     {
         private readonly ApplicationDbContext _db;
 
-        public AsesorControlador(ApplicationDbContext db)
+        public AsBeneficioControlador(ApplicationDbContext db)
         {
             _db = db;
         }

@@ -1,0 +1,89 @@
+﻿@page
+@model CausasJudiciales.Pages.Beneficios.CargarModel
+@{
+
+    ViewData["Title"] = "CARGAR CAUSA";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="text-info">CARGAR CAUSA</div>
+
+            <form method="post">
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.NumeroExpediente" class="form-label"></label>
+                    <input asp-for="Beneficio.NumeroExpediente" class="form-control" placeholder="Ingrese Numero de Expediente" />
+                    <span asp-validation-for="Beneficio.NumeroExpediente" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.Representado" class="form-label"></label>
+                    <input asp-for="Beneficio.Representado" class="form-control" placeholder="Ingrese Apellido y Nombre del Representado" />
+                    <span asp-validation-for="Beneficio.Representado" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.Caratula" class="form-label"></label>
+                    <input asp-for="Beneficio.Caratula" class="form-control" placeholder="Ingrese Caratula de la Causa" />
+                    <span asp-validation-for="Beneficio.Caratula" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.Testigos" class="form-label"></label>
+                    <input asp-for="Beneficio.Testigos" class="form-control" placeholder="SI / NO" />
+                    <span asp-validation-for="Beneficio.Testigos" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.InicioDemanda" class="form-label"></label>
+                    <input asp-for="Beneficio.InicioDemanda" class="form-control" placeholder="SI / NO" />
+                    <span asp-validation-for="Beneficio.InicioDemanda" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.Traslado" class="form-label"></label>
+                    <input asp-for="Beneficio.Traslado" class="form-control" placeholder="SI / NO" />
+                    <span asp-validation-for="Beneficio.Traslado" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.SeDicteSentencia" class="form-label"></label>
+                    <input asp-for="Beneficio.SeDicteSentencia" class="form-control" placeholder="SI / NO" />
+                    <span asp-validation-for="Beneficio.SeDicteSentencia" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.Sentencia" class="form-label"></label>
+                    <input asp-for="Beneficio.Sentencia" class="form-control" />
+                    <span asp-validation-for="Beneficio.Sentencia" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.Regulacion" class="form-label"></label>
+                    <input asp-for="Beneficio.Regulacion" class="form-control" placeholder="Ingrese regulacion" />
+                    <span asp-validation-for="Beneficio.Regulacion" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Beneficio.Observaciones" class="form-label"></label>
+                    <input asp-for="Beneficio.Observaciones" class="form-control" placeholder="Ingrese observaciones" />
+                    <span asp-validation-for="Beneficio.Observaciones" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">CARGAR CAUSA</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <a asp-page="Index" class="btn btn-success">VOLVER</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

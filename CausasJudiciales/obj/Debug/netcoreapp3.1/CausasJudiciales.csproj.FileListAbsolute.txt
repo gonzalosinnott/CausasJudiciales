@@ -384,4 +384,6 @@ D:\Portfolio\CausasJudiciales\CausasJudiciales\obj\Debug\netcoreapp3.1\CausasJud
 D:\Portfolio\CausasJudiciales\CausasJudiciales\obj\Debug\netcoreapp3.1\Razor\Pages\Asesoria\Cargar.cshtml.g.cs
 D:\Portfolio\CausasJudiciales\CausasJudiciales\obj\Debug\netcoreapp3.1\Razor\Pages\Asesoria\Index.cshtml.g.cs
 D:\Portfolio\CausasJudiciales\CausasJudiciales\obj\Debug\netcoreapp3.1\Razor\Pages\Asesoria\Editar.cshtml.g.cs
-D:\Portfolio\CausasJudiciales\CausasJudiciales\obj\Debug\netcoreapp3.1\Razor\Pages\Asesoria\Eliminar.cshtml.g.cs
+D:\Portfolio\CausasJudiciales\CausasJudiciales\obj\Debug\netcoreapp3.1\Razor\Pages\Beneficios\Cargar.cshtml.g.cs
+D:\Portfolio\CausasJudiciales\CausasJudiciales\obj\Debug\netcoreapp3.1\Razor\Pages\Beneficios\Editar.cshtml.g.cs
+D:\Portfolio\CausasJudiciales\CausasJudiciales\obj\Debug\netcoreapp3.1\Razor\Pages\Beneficios\Index.cshtml.g.cs

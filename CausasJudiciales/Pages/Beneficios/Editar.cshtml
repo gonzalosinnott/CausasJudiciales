@@ -1,0 +1,116 @@
+﻿@page
+@model CausasJudiciales.Pages.Beneficios.EditarModel
+
+<br />
+<h2 class="text-info">EDITAR CAUSA</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <input type="hidden" asp-for="Beneficio.Id" />
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.NumeroExpediente"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.NumeroExpediente" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.Representado"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.Representado" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.Caratula"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.Caratula" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.Testigos"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.Testigos" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.InicioDemanda"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.InicioDemanda" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.Traslado"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.Traslado" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.SeDicteSentencia"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.SeDicteSentencia" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.Sentencia"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.Sentencia" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.Regulacion"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.Regulacion" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Beneficio.Observaciones"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Beneficio.Observaciones" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="ACTUALIZAR" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="Index" class="btn btn-success form-control">VOLVER A LISTA DE CAUSAS</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
